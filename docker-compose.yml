@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  otuscheck:
+    build: .
+    container_name: healthcheck
+    hostname: otuscheck
+    image: healthcheck
+    ports:
+      - 8000:8000
